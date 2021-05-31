@@ -1,0 +1,33 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		String question;
+		String answer;
+		String response;
+		int block = 0;
+		System.out.println("************************");
+		System.out.println("*** GUESS THAT THING ***");
+		System.out.println("************************\n\n");
+		System.out.println("Type your question for the answerer: \n");
+		question = input.nextLine();
+		System.out.print("\nType your answer: ");
+		answer = input.nextLine();
+		while(block < 50) {
+		    System.out.println("*****************************");
+		    block++;
+		}
+		System.out.println("QUESTION\n");
+		System.out.println(question + "\n");
+		System.out.println("Now contestant what is your answer?\n");
+		response = input.nextLine();
+		if(response.equalsIgnoreCase(answer)) {
+		    System.out.println("\n\n\t!!CONGRATULATIONS!!\n\tYOU ARE CORRECT!!\n\tYOU HAVE WON FOOD IN THE FRIDGE!!");
+		}
+		else
+		    System.out.println("\n\n\tNICE TRY!!\n\tYOU HAVE WON A COMPUTER... which is the one you are using now.");
+		
+	}
+}
